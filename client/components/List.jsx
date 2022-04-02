@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getMeals } from '../../server/controller';
+// import { getMeals } from '../../server/controller';
 import * as actions from '../actions/actions';
 import Nutrition from './Nutrition.jsx';
 import SavedMeals from './SavedMeals.jsx';
@@ -37,7 +37,7 @@ const mapDispatchToProps = (dispatch) => ({
 class List extends Component {
 
   componentDidMount() {
-    getMeals();
+    // getMeals();
   }
 
   render() {
