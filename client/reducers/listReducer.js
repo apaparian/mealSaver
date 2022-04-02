@@ -26,7 +26,7 @@ const listReducer = (state = initialState, action) => {
       return {
           ...state,
           calories: Math.round(action.payload.calories),
-          carbohydrates: Math.round(action.payload.totaasclNutrients.CHOCDF.quantity),
+          carbohydrates: Math.round(action.payload.totalNutrients.CHOCDF.quantity),
           fat: Math.round(action.payload.totalNutrients.FAT.quantity),
           protein: Math.round(action.payload.totalNutrients.PROCNT.quantity),
       };

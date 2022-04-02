@@ -1,6 +1,7 @@
 // import axios from 'axios';
 import * as types from '../constants/actionTypes';
 import axios from 'axios';
+import 'regenerator-runtime/runtime';
 
 export const getMeals = () => (dispatch) => {
   axios({
@@ -10,7 +11,7 @@ export const getMeals = () => (dispatch) => {
   .then((res) => {
     dispatch({
       type: types.GET_MEALS,
-      // payload: res.data
+      payload: res.data
     })
   })
 }

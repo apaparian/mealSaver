@@ -4,7 +4,7 @@ const controller = require('./controller');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.status(200).sendFile(path.join(__dirname, '../index.html'))
+  res.status(200).sendFile(path.join(__dirname, '../client/index.html'))
 });
 
 router.get('/api/getMeals',
